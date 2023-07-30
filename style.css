@@ -1,0 +1,528 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing:border-box;
+  }
+  
+body{
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: #fff;
+}
+
+.header{
+    width: 100vw;
+    height: 100vh;
+    /* background-clip:padding-box; */
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3),rgba(0,0,0,0.5),rgba(0,0,0,0.3)), url(img/night-sky-glows-with-iridescent-deep-space-generative-ai.jpg);
+    background-size:contain;
+    background-position:center;
+    padding: 5rem 5rem;
+}
+
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.logo{
+    padding-left: 1.5rem;
+    width: 5.7rem;
+    height: 5rem;
+}
+
+.nav-right{
+    display: inline-flex;
+    justify-content: center;
+    padding: 4px 0px;
+}
+
+.nav-right a{
+    font-size: 1.3rem;
+    padding: 0 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-right a:hover{
+    color: #3c63ff;
+}
+
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+
+.header-content h3{
+    letter-spacing: 0.5px;
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 27px;
+}
+
+.header-content p{
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    font-size: 2rem;
+}
+
+#arrow-scroll{
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    width: 100vw;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 45px;
+    height: 18px;
+}
+
+/* ----------------------------About Section--------------------------- */
+
+#about-heading{
+    position: absolute;
+    top: 115%;
+    left: 50%;
+    width: 100vw;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+#about-heading h2{
+    letter-spacing: 0.5px;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+#about-heading p{
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    font-size: 1.3rem;
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    padding: 10rem 5rem 0 5rem;
+    align-items: center;
+}
+
+.about-left{
+    width: 50%;
+    padding-bottom: 1rem;
+}
+
+.about-left p{
+    border: 1px solid;
+    padding: 2rem;
+    margin: 4rem 1.5rem 4rem 3rem;
+    font-size: 1.7rem;
+    font-weight: 200;
+    border-radius: 25px;
+}
+
+.about-right{
+    width: 50%;
+}
+
+.about-rt-img img{
+    height: auto;
+    padding-left: 5rem;
+    width: 100%;
+}
+
+/* ----------------------------Team Section--------------------------- */
+
+#team-heading{
+    position: absolute;
+    top: 210%;
+    left: 50%;
+    width: 100vw;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+#team-heading h2{
+    letter-spacing: 0.5px;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+#team-heading p{
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    font-size: 1.3rem;
+}
+
+.team-content{
+    width: 100vw;
+    height: 300vh;
+    margin-top: 14rem;
+    background-image: url(img/background.png);
+    background-repeat: repeat-y;
+}
+
+.team-row-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    padding: 0 10rem;
+}
+
+.card1{
+    width: 25%;
+    height: 100%;
+    border: 1px;
+    border: 1px solid #3c63ff;
+    background-position: center;
+    border-radius: 25px;
+}
+
+.card1:hover{
+    background-color: #3c63ff;
+}
+
+.image{
+    display: flex;
+    padding: 1.7rem 1rem 0 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img{
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    border: 2.5px solid #3c63ff;
+}
+
+.card1-content{
+    text-align: center;
+    padding: 1rem 0 0.7rem 0;
+}
+
+.card1-content h3{
+    font-weight: 300;
+}
+
+.card1-content p{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.card1-content-links{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: #fff 1px solid;
+    padding: 0.2rem 0.5rem;
+    margin: 0 3.5rem;
+    border-radius: 7px;
+}
+
+.card2{
+    width: 25%;
+    height: 100%;
+    margin: 0 3rem;
+    border: 1px solid #3c63ff;
+    border-radius: 25px;
+}
+
+.card2:hover{
+    background-color: #3c63ff;
+}
+
+.card3{
+    width: 25%;
+    height: 100%;
+    border: 1px solid #3c63ff;
+    border-radius: 25px;
+}
+
+.card3:hover{
+    background-color: #3c63ff;
+}
+
+/* Row 2 */
+
+.team-row-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 3rem;
+    height: 300px;
+    margin-top: 4rem;
+    padding: 0 10rem;
+}
+
+.small-card1{
+    width: 20%;
+    height: 100%;
+    border: 1px solid #3c63ff;
+    border-radius: 25px;
+}
+
+.small-card1:hover{
+    background-color: #3c63ff;
+}
+
+.small-card1 .image{
+    display: flex;
+    padding: 2rem 1rem 0 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-card2 .image{
+    display: flex;
+    padding: 2rem 1rem 0 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-card3 .image{
+    display: flex;
+    padding: 2rem 1rem 0 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-card4 .image{
+    display: flex;
+    padding: 2rem 1rem 0 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-card1 .image img{
+    height: 75%;
+    width: 75%;
+    border-radius: 50%;
+}
+
+.small-card2 .image img{
+    height: 75%;
+    width: 75%;
+    border-radius: 50%;
+}
+
+.small-card3 .image img{
+    height: 75%;
+    width: 75%;
+    border-radius: 50%;
+}
+
+.small-card4 .image img{
+    height: 75%;
+    width: 75%;
+    border-radius: 50%;
+}
+
+.small-card1-content{
+    text-align: center;
+    padding: 1rem 0 0.7rem 0;
+}
+
+.small-card1-content h3{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.small-card1-content p{
+    font-size: 0.85rem;
+    font-weight: 300;
+}
+
+.small-card1-content-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    border: #fff 1px solid;
+    padding: 0.15rem 0;
+    margin: 0.7rem 4rem;
+    border-radius: 5px;
+}
+
+.small-card1-content-links img{
+    width: 70%;
+    height: 70%;
+}
+
+.small-card2{
+    width: 20%;
+    height: 100%;
+    border: 1px solid #3c63ff;
+    border-radius: 25px;
+}
+
+.small-card2:hover{
+    background-color: #3c63ff;
+}
+
+.small-card3{
+    width: 20%;
+    height: 100%;
+    border: 1px solid #3c63ff;
+    border-radius: 25px;
+}
+
+.small-card3:hover{
+    background-color: #3c63ff;
+}
+
+.small-card4{
+    width: 20%;
+    height: 100%;
+    border: 1px solid #3c63ff;
+    border-radius: 25px;
+}
+
+.small-card4:hover{
+    background-color: #3c63ff;
+}
+
+/* ----------------------------Contact Section--------------------------- */
+
+#contact-heading{
+    position: absolute;
+    top: 435%;
+    left: 50%;
+    width: 100vw;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+#contact-heading h2{
+    letter-spacing: 0.5px;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+#contact-heading p{
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    font-size: 1.3rem;
+}
+
+.contact-content-heading{
+    position: absolute;
+    top: 450%;
+    left: 50%;
+    width: 100vw;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.contact-content-heading h3{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.contact-content{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 475%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100vw;
+    height: 100vh;
+    padding: 10rem 1.5rem 0 7rem;
+    align-items: center;
+}
+
+.contact-content-left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-content-left p{
+    border: 1px solid;
+    padding: 2rem;
+    margin: 6.5rem 1.5rem 4rem 3rem;
+    font-size: 1.7rem;
+    font-weight: 200;
+    border-radius: 25px;
+}
+
+.contact-content-left h1{
+    padding: 2rem;
+    margin: -3.5rem 1.5rem 4rem 3rem;
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.contact-content-right{
+    width: 50%;
+}
+
+.contact-content-rt-img img{
+    height: auto;
+    padding-left: 7rem;
+    width: 70%;
+}
+
+/*      Footer Section    */
+
+.pre-footer h3{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    font-weight: 400;
+    top: 524%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100vw;
+    margin-bottom: 10%;
+    padding: 10px 50px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 530%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100vw;
+    margin-bottom: 10%;
+    padding: 10px 50px;
+    border-top: #fff 1px solid;
+}
+  
+.footer p{
+    font-size: 1.1rem;
+}
+
+.footer h3{
+    font-size: 1.1rem;
+}
+  
+.footer a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #3c63ff;
+}
